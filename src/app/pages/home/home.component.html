@@ -1,0 +1,121 @@
+
+<div class="contain-fluid">
+    <div id="carouselExampleCaptions" class="carousel slide">
+       
+        <div class="carousel-inner">
+            <div class="carousel-item active" *ngFor="let b of bannerResult;let i=index" [ngClass]="{active:i === 1}">
+                <img src="https://image.tmdb.org/t/p/original/{{b.backdrop_path}}" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h2>{{b.original_title}}</h2>
+                    <p>{{b.overview}}.</p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+
+<div class="contain-fluid">
+    <div class="row"></div>
+    <h5 class="text-white">Trending Movies</h5>
+    <div class="rowposter" >
+        <ng-container *ngFor="let t of trendingResult">
+            <img class="rowimg largeposter" src="https://image.tmdb.org/t/p/original/{{t.poster_path}}" alt="">
+
+        </ng-container>
+        
+    </div>
+
+</div>
+
+<div class="contain-fluid">
+    <div class="row"></div>
+    <h5 class="text-white">Action Movies</h5>
+    <div class="rowposter">
+        <ng-container *ngFor="let a of actionResult">
+            <img class="rowimg largeposter" src="https://image.tmdb.org/t/p/original/{{a.poster_path}}" alt="">
+
+        </ng-container>
+
+    </div>
+
+</div>
+
+<div class="contain-fluid">
+    <div class="row"></div>
+    <h5 class="text-white">Adventure Movies</h5>
+    <div class="rowposter">
+        <ng-container *ngFor="let t of adventureResult">
+            <img class="rowimg largeposter" src="https://image.tmdb.org/t/p/original/{{t.poster_path}}" alt="">
+
+        </ng-container>
+
+    </div>
+
+</div>
+
+<div class="contain-fluid">
+    <div class="row"></div>
+    <h5 class="text-white">Animation Movies</h5>
+    <div class="rowposter">
+        <ng-container *ngFor="let t of animationResult">
+            <img class="rowimg largeposter" src="https://image.tmdb.org/t/p/original/{{t.poster_path}}" alt="">
+
+        </ng-container>
+
+    </div>
+
+</div>
+
+<div class="contain-fluid">
+    <div class="row"></div>
+    <h5 class="text-white">Comedy Movies</h5>
+    <div class="rowposter">
+        <ng-container *ngFor="let t of comedyResult">
+            <img class="rowimg largeposter" src="https://image.tmdb.org/t/p/original/{{t.poster_path}}" alt="">
+
+        </ng-container>
+
+    </div>
+
+</div>
+
+<div class="contain-fluid">
+    <div class="row"></div>
+    <h5 class="text-white">Documentary Movies</h5>
+    <div class="rowposter">
+        <ng-container *ngFor="let t of documentaryResult">
+            <img class="rowimg largeposter" src="https://image.tmdb.org/t/p/original/{{t.poster_path}}" alt="">
+
+        </ng-container>
+
+    </div>
+
+</div>
+
+<div class="contain-fluid">
+    <div class="row"></div>
+    <h5 class="text-white">Science-Fiction Movies</h5>
+    <div class="rowposter">
+        <ng-container *ngFor="let t of scienceResult">
+            <img class="rowimg largeposter" src="https://image.tmdb.org/t/p/original/{{t.poster_path}}" alt="">
+
+        </ng-container>
+
+    </div>
+
+</div>
+
+<div class="contain-fluid">
+    <div class="row"></div>
+    <h5 class="text-white">Thriller Movies</h5>
+    <div class="rowposter">
+        <ng-container *ngFor="let t of thrillerResult">
+            <img class="rowimg largeposter" src="https://image.tmdb.org/t/p/original/{{t.poster_path}}" alt="">
+
+        </ng-container>
+
+    </div>
+
+</div>
